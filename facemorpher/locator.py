@@ -11,7 +11,7 @@ import os
 
 DATA_DIR = os.environ.get(
   'DLIB_DATA_DIR',
-  path.join(path.dirname(path.dirname(path.realpath(__file__))), 'data')
+  path.join(path.dirname(path.dirname(path.realpath(__file__))), 'face_recognition_models/models')
 )
 dlib_detector = dlib.get_frontal_face_detector()
 dlib_predictor = dlib.shape_predictor(path.join(DATA_DIR, 'shape_predictor_68_face_landmarks.dat'))
